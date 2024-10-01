@@ -1,2 +1,3 @@
-'winget install AutoHotkey.AutoHotkey
-'
+```
+winget install AutoHotkey.AutoHotkey
+```
