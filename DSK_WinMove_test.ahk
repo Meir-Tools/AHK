@@ -4,7 +4,7 @@
 ; https://www.autohotkey.com/docs/v2/lib/WinMove.htm
 ; WinMove X, Y, Width, Height, WinTitle, WinText, ExcludeTitle, ExcludeText
 ; 
-MyWinTitle := "Command & Conquer (TM) Generals Zero Hour"
+; MyWinTitle := "Command & Conquer (TM) Generals Zero Hour"
 ;if WinExist(MyWinTitle)
 ;{
 ;	WinActivate ; Use the window found by WinExist.
