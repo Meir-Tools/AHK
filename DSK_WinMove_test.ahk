@@ -18,14 +18,28 @@ SetWorkingDir A_ScriptDir  ; Forces the script to use the folder it was initiall
 ; ======= Get Screen Size =======
 VirtualScreenWidth := SysGet(78)
 VirtualScreenHeight := SysGet(79)
+HWNDs := WinGetList("", "", "", "")
 ; ======= Start message =======
 msg := "screen size: "
 msg := msg "`r`n"
 msg := msg VirtualScreenWidth " x " VirtualScreenHeight
 msg := msg "`r`n"
+msg := msg "Open Windows found:" HWNDs.Length
+msg := msg "`r`n"
 MsgBox(msg)
 ; ======= Main =======
 MainLabel:
+	;window hive
+	;function ()
+		;resolution 
+		;resx = VirtualScreenWidth
+		;resy = VirtualScreenHeight
+		;windowTotal
+		;windowNum
+		;windowXwidth = x / windowTotal
+		;windowYhight = y / windowTotal
+		;setWindowTo (windowXwidth * windowNum ,  )
+		
 MyWinTitle := "Command Prompt"
 if WinExist(MyWinTitle)
 	WinMove 100, 100, 100, 512, MyWinTitle
