@@ -13,6 +13,7 @@
 ;	MouseMove, 1200, 300, 50 
 ;}
 ; ======= set =======
+#Requires AutoHotkey v2 
 #Warn  ; Enable warnings to assist with detecting common errors.
 SetWorkingDir A_ScriptDir  ; Forces the script to use the folder it was initially launched from as its working directory.
 ; ======= Get Screen Size =======
@@ -27,6 +28,10 @@ msg := msg "`r`n"
 msg := msg "Open Windows found:" HWNDs.Length
 msg := msg "`r`n"
 MsgBox(msg)
+; ======= Open webview =======
+;Run("https://kinobase.org/") ; פותח את פייסבוק בדפדפן ברירת המחדל
+Sleep(2000) ; המתנה 2 שניות שהדפדפן יספיק להיפתח (ניתן להגדיל אם צריך)
+
 ; ======= Main =======
 MainLabel:
 	;window hive
